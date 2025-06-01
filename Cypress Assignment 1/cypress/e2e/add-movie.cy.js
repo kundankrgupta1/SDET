@@ -12,7 +12,7 @@ describe("Add a new Movie", () => {
 
 		// Ensure we're on the add page
 		cy.url().should("include", "/add");
-
+		
 		cy.get("input[name='poster']").type("https://m.media-amazon.com/images/M/MV5BZThmNDg1NjUtNWJhMC00YjA3LWJiMjItNmM4ZDQ5ZGZiN2Y2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg");
 		cy.get("input[name='name']").type("Animal");
 		cy.get("input[name='year']").type("2023");
